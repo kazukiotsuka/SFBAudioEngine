@@ -86,7 +86,7 @@ let package = Package(
 				.headerSearchPath("Metadata"),
 				.headerSearchPath("Conversion"),
 			],
-            cxxsettings: [
+            cxxSettings: [
                 .unsafeFlags(["-mios-version-min=16.0"])
             ],
 			linkerSettings: [

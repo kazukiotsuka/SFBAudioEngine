@@ -86,6 +86,9 @@ let package = Package(
 				.headerSearchPath("Metadata"),
 				.headerSearchPath("Conversion"),
 			],
+            cxxsettings: [
+                .unsafeFlags(["-mios-version-min=16.0"])
+            ],
 			linkerSettings: [
 				.linkedFramework("Accelerate"),
 				.linkedFramework("AudioToolbox"),
